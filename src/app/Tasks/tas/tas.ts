@@ -1,5 +1,12 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
+interface Task{
+  id:string;
+  userId:string;
+  title:string;
+  summary:string;
+  duedate:string;
 
+}
 @Component({
   selector: 'app-tas',
   standalone: true,
@@ -8,5 +15,5 @@ import { Component } from '@angular/core';
   styleUrl: './tas.css'
 })
 export class TasComponent {
-
+@Input({required:true}) tas!:Task;
 }

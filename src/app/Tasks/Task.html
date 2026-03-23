@@ -7,9 +7,10 @@
   </menu>
 </header>
 <ul>
+  @for (tas of SelectedUserTask;track tas.id){
   <li>
-    <app-tas></app-tas>
-  </li>
+    <app-tas [tas]="tas"></app-tas>
+  </li>}
 </ul>
 </section>
 
