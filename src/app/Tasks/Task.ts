@@ -42,4 +42,8 @@ export class TaskComponent {
   get SelectedUserTask(){
     return this.dummyTasks.filter((task)=> task.userId===this.userid);
   }
+
+  onCompleteTask(id:string){
+this.dummyTasks=this.dummyTasks.filter((task) => task.id !== id);
+  }
 }
