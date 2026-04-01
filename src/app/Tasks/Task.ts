@@ -52,4 +52,8 @@ this.dummyTasks=this.dummyTasks.filter((task) => task.id !== id);
   onStartAddTask(){
 this.isAdingTask=true;
   }
+
+  onCancelAddTask(){
+    this.isAdingTask=false;
+  }
 }
