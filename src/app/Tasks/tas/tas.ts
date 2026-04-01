@@ -15,4 +15,6 @@ export class TasComponent {
 onCompleteTask(){
   this.complete.emit(this.tas.id);
 }
+
+
 }
