@@ -3,7 +3,7 @@ export interface Task{
     userId:string;
     title:string;
     summary:string;
-    duedate:string;
+    dueDate:string;
   
   }
 

@@ -1,9 +1,12 @@
 import { Component,Input,Output,EventEmitter } from '@angular/core';
 import { Task } from './tas.model' 
+import { CardComponent } from '../../shared/card/card';
+import { DatePipe  } from '@angular/common';
+
 @Component({
   selector: 'app-tas',
   standalone: true,
-  imports: [],
+  imports: [CardComponent,DatePipe],
   templateUrl: './tas.html',
   styleUrl: './tas.css'
 })
