@@ -2,6 +2,8 @@ import { Component, signal, computed, Input,Output, input,EventEmitter } from '@
 
 import { DUMMY_USERS } from '../dummy-users';
 import {User } from './user.model'
+
+import {CardComponent} from '../shared/card/card'
 //const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
 // type User={
 //   id:string;
