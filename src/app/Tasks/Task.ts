@@ -20,12 +20,12 @@ constructor(private tasksservice:TaskService){
 
 }
   get SelectedUserTask(){
-    return this.taskService.getusertasks(this.userid) ;
+    return this.tasksservice.getusertasks(this.userid) ;
   }
 
-  onCompleteTask(id:string){
+  // onCompleteTask(id:string){
 
-  }
+  // }
 
   onStartAddTask(){
 this.isAdingTask=true;

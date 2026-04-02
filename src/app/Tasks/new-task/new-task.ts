@@ -1,4 +1,4 @@
-import { Component,Output,EventEmitter,signal ,inject} from '@angular/core';
+import { Component,Output,EventEmitter,signal ,inject,Input} from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { NewTaskData } from '../tas/tas.model' 
 import {TaskService} from '../task.service'
@@ -10,7 +10,7 @@ import {TaskService} from '../task.service'
   styleUrl: './new-task.css'
 })
 export class NewTaskComponent {
-  @Input ({required:true}) userId!:string;
+  @Input({required:true}) userId!:string;
 @Output() close= new EventEmitter();
 //@Output() add=new EventEmitter<NewTaskData>();
 enteredTitle='';
