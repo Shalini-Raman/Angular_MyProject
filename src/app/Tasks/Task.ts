@@ -1,14 +1,14 @@
 import { Component, Input } from '@angular/core';
-import { TasComponent } from './tas/tas';
-import { NewTaskComponent } from './new-task/new-task' 
+// import { TasComponent } from './tas/tas';
+// import { NewTaskComponent } from './new-task/new-task' 
 import { NewTaskData } from './tas/tas.model' 
 import {TaskService} from './task.service'
 @Component({
   selector: 'app-tasks',
-  standalone: true,
+  //standalone: true,
   templateUrl: './Task.html',
   styleUrls: ['./Task.css'],
-  imports: [TasComponent,NewTaskComponent],
+ // imports: [TasComponent,NewTaskComponent],
 })
 export class TaskComponent {
   @Input({ required: true }) name!: string;
