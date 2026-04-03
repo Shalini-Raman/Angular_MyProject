@@ -1,17 +1,17 @@
 import { Component } from '@angular/core';
 
-import { HeaderComponent } from './header/Header';
-import { UserComponent } from './user/user';
+// import { HeaderComponent } from './header/Header';
+// import { UserComponent } from './user/user';
 import { DUMMY_USERS } from './dummy-users';
-import { TaskComponent } from './Tasks/Task';
+//import { TaskComponent } from './Tasks/Task';
 import { NgFor } from '@angular/common'
 import { NgIf }from '@angular/common'
 @Component({
   selector: 'app-root',
-  standalone: true,
+  standalone: false,
   templateUrl: './app.html',
   styleUrls: ['./app.css'],
-  imports: [HeaderComponent, UserComponent,TaskComponent,NgFor,NgIf],
+  //imports: [HeaderComponent, UserComponent,TaskComponent,NgFor,NgIf],
 })
 export class AppComponent {
   users = DUMMY_USERS;
